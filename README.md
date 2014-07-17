@@ -1,8 +1,18 @@
-!Backup script for TiddlySpace
+TiddlySpace Backup script
+==========================
 
-Downloads the contents of a space (public and private bags), zips it up and stores the zip on S3 (optional). Can run as an iron.io worker.
+Backup script for TiddlySpace (optionally run as an iron.io worker). Downloads the contents of a space (public and private bags), zips it up and stores the zip on S3 (optional). Can run as an iron.io worker.
 
-!! Config file format
+Prerequisites
+-------------
+
+    node (tested with v0.10.16)
+    npm (tested with v1.3.8)
+    
+Download the dependencies using `npm install` from the root folder.
+
+Config file format
+------------------
 
 The config file format is the same whether the script is running locally or as an IronWorker. Create a file called `config.js` and either follow the format below or copy `config-sample.js`.
 
@@ -14,13 +24,15 @@ The config file format is the same whether the script is running locally or as a
         "s3_api_secret": "n0nsensen0nsensen0nsense", // S3 secret
     };
 
-!! Usage as a local script
+Usage as a local script
+-----------------------
 
     node app.js
 
-!! Usage as an IronWorker script
+Usage as an IronWorker script
+-----------------------------
 
-You need to have `iron_worker` installed locally and an `iron.json` file with your credentials in it. See the iron.io (Node.js documentation)[http://dev.iron.io/worker/languages/nodejs/] for setup details.
+You need to have `iron_worker` installed locally and an `iron.json` file with your credentials in it. See the iron.io [Node.js documentation](http://dev.iron.io/worker/languages/nodejs/) for setup details.
 
 Testing locally:
 
