@@ -1,0 +1,33 @@
+{
+  "name": "ctrlio-backup",
+  "version": "0.0.1",
+  "description": "Backup script for TiddlySpace",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Penrose <contact@penrosestudio.com>",
+  "contributors": [{
+      "name": "Jonathan Lister",
+      "email": "jonathan@penrosestudio.com"
+  }],
+  "license": "MIT",
+  "repository": {
+      "type": "git",
+      "url": ""
+  },
+  "bugs": {
+      "url": ""
+  },
+  "keywords": [
+      "tiddlyspace",
+      "backup"
+  ],
+  "dependencies": {
+    "knox": "~0.9.0",
+    "async": "~0.9.0",
+    "request": "~2.37.0",
+    "jszip": "~2.3.0",
+    "moment": "~2.7.0"
+  }
+}

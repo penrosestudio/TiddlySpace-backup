@@ -1,0 +1,10 @@
+# define the runtime language
+runtime "node"
+stack "node-0.10"
+# exec is the file that will be executed:
+exec "backup_worker.js"
+file "package.json" # include dependency manifest when uploading
+file "npm-shrinkwrap.json" # fix dependencies
+file "backup.js"
+build "npm config set strict-ssl false; npm install --production"
+remote
