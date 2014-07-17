@@ -17,10 +17,10 @@
   "license": "MIT",
   "repository": {
       "type": "git",
-      "url": ""
+      "url": "https://github.com/penrosestudio/TiddlySpace-backup"
   },
   "bugs": {
-      "url": ""
+      "url": "https://github.com/penrosestudio/TiddlySpace-backup/issues"
   },
   "keywords": [
       "tiddlyspace",
