@@ -10,6 +10,9 @@
   "contributors": [{
       "name": "Jonathan Lister",
       "email": "jonathan@penrosestudio.com"
+  }, {
+      "name": "Jeremy Ruston",
+      "email": "jeremy@jermolene.com"
   }],
   "license": "MIT",
   "repository": {
