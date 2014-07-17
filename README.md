@@ -14,15 +14,15 @@ Download the dependencies using `npm install` from the root folder.
 Config file format
 ------------------
 
-The config file format is the same whether the script is running locally or as an IronWorker. Create a file called `config.js` and either follow the format below or copy `config-sample.js`.
+The config file format is the same whether the script is running locally or as an IronWorker. Create a file called `config.json` and either follow the format below or copy `config-sample.json`.
 
-    config = {
+    {
         "username": "jonny", // TiddlySpace username that has permission to access the private bags of the space(s) you want to archive
         "password": "biggs123", // TiddlySpace password
         "bags": ["mySpace_public", "mySpace_private"], // an array of TiddlySpace bags to archive
         "s3_api_key": "5Ample5Ample5Ample", // S3 API key / access key
-        "s3_api_secret": "n0nsensen0nsensen0nsense", // S3 secret
-    };
+        "s3_api_secret": "n0nsensen0nsensen0nsense" // S3 secret
+    }
 
 Usage as a local script
 -----------------------
